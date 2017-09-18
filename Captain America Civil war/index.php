@@ -22,11 +22,23 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container">
+      <a class="navbar-brand" href="#">Movie Reviews</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="input-group">
+        <input class="form-control" placeholder="Search" id="movieSearch" data-provide="typeahead"
+        autocomplete="off">
+        <div class="input-group-btn">
+          <button id="searchButton" class="btn btn-default"><i
+            class="icon-search"></i></button>
+          </div>
+        </div>
+
+
+        
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -35,25 +47,22 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+              <a class="nav-link" href="#">Login</a>
+
+
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+
 
     <!-- Page Content -->
     <div class="container">
 
       <!-- Portfolio Item Heading -->
 
-      <h1 class="my-4"><a href="" rel="nofollow" itemprop="ur1">Captain America: Civil War</a>
+      <h1 class="my-4"><a >The Godfather</a>
         <small>(2016)</small>
       </h1>
 
@@ -63,7 +72,7 @@
 
 
             <div class="col-md-8">
-              <img class="img-fluid" src="images/main.jpg" alt="" >
+              <img class="img-fluid" src="images/god1.jpg" alt="" >
             </div>
 
         <div class="col-md-4">
@@ -97,11 +106,11 @@
             
              
           <h3 class="my-3">Storyline</h3>
-          <p>______With many people fearing the actions of super heroes, the government decides to push for the Hero Registration Act, a law that limits a hero's actions. This results in a division in The Avengers. Iron Man stands with this Act, claiming that their actions must be kept in check otherwise cities will continue to be destroyed, but Captain America feels that saving the world is daring enough and that they cannot rely on the government to protect the world. This escalates into an all-out war between Team Iron Man (Iron Man, Black Panther, Vision, Black Widow, War Machine, and Spider-Man) and Team Captain America (Captain America, Bucky Barnes, Falcon, Scarlet Witch, Hawkeye, and Ant Man) while a new villain emerges. Written by RespectTheHyphen</p>
+          <p>When the aging head of a famous crime family decides to transfer his position to one of his subalterns, a series of unfortunate events start happening to the family, and a war begins between all the well-known families leading to insolence, deportation, murder and revenge, and ends with the favorable successor being finally chosen. Written by J. S. Golden</p>
           <h3 class="my-3">Details</h3>
      
             <h6>Official Sites:
-            <a href="" rel="nofollow" itemprop="ur1">Marvel Oficial Site</a>
+            <a href="" rel="nofollow" itemprop="ur1">GodFather Oficial Site</a>
             <span>|</span>
             <a href="" rel="nofollow" itemprop="ur1"> Official Facebook </a>
             <span>|</span>
@@ -190,252 +199,75 @@
       <!-- x Row -->
       <h1 class="my-4">Related Projects</h1>
 
-      <div class="row">
+      
+      <div class="row text-center">
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="images/pic3.jpg" alt="">
-          </a>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <!-- Poster It Stephen King-->
+              <img class="card-img-top" src="https://image.ibb.co/hdEmUF/It.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">IT</h4>
+                <p class="card-text">The latest adaptation of Stephen King's classic horror novel privileges CGI scares over dread and nuance.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Find Out More!</a>
+              </div>
+            </div>
+          </div>
+          <!--Spiderman poster-->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="https://image.ibb.co/id35pF/spiderman_homecoming.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Spider-Man: Homecoming</h4>
+                <p class="card-text">A young Peter Parker/Spider-Man begins to navigate his newfound identity as the web-slinging superhero.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Find Out More!</a>
+              </div>
+            </div>
+          </div>
+          <!--God of Egypt-->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="https://image.ibb.co/dCpd9F/God_of_Egypt.jpg" alt="">
+              <div class="card-body">
+                <h4 class="card-title">Gods of Egypt</h4>
+                <p class="card-text">An Egyptian god battles his vengeful uncle with the aid of a mortal in Alex Proyas' fantasy-adventure film.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Find Out More!</a>
+              </div>
+            </div>
+          </div>
+          <!--The Godfather -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="card-img-top" src="https://image.ibb.co/nLL1gv/The_Godfather.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">The Godfather</h4>
+                <p class="card-text">The aging patriarch of an organized crime dynasty transfers control of his clandestine. </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Find Out More!</a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="images/pic4.jpg" alt="">
-          </a>
-        </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="images/pic5.jpg" alt="">
-          </a>
-        </div>
 
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="images/pic6.jpg" alt="">
-          </a>
-        </div>
 
-      </div>
+
+
       <!-- /.row -->
 
    
     <!-- /.container -->
     <br>
-    <!-- color line  -->
-    
-<div class="container">
-    <div class="row">
-        <div class="col-md-5ths col-sm-5ths red">
-        </div>
-        <div class="col-md-5ths col-sm-5ths green">
-        </div>
-        <div class="col-md-5ths col-sm-5ths blue">
-        </div>
-        <div class="col-md-5ths col-sm-5ths green">
-        </div>
-        <div class="col-md-5ths col-sm-5ths yellow">
-        </div>
-    </div>
-</div>
 
-    <h1 class="my-4">Review</h1>
-
-    </div>
-    <!-- /.container -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/mr4.jpg">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title mt-3">Tawshif Ahsan Khan</h4>
-                        <div class="meta">
-                            <a>Friends</a>
-                        </div>
-                        <div class="card-text">
-                            
-                        It is one of the best movies to ever come out of the Marvel Cinematic Universe, balancing engaging action set pieces and witty dialogue with intelligent character studies and ethical debates.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small>Last updated 3 mins ago</small>
-                        <button class="btn btn-secondary float-right btn-sm">show</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/mr1.jpg">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title mt-3">Tawshif Ahsan Khan</h4>
-                        <div class="meta">
-                            <a>Friends</a>
-                        </div>
-                        <div class="card-text">
-                            
-                        As they did in Winter Soldier, the Russos have achieved an uncommon balance of plot and action, humor and drama, all of it once again deeply grounded in character.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small>Last updated 3 mins ago</small>
-                        <button class="btn btn-secondary float-right btn-sm">show</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/mr2.jpg">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title mt-3">Tawshif Ahsan Khan</h4>
-                        <div class="meta">
-                            <a>Friends</a>
-                        </div>
-                        <div class="card-text">
-                            
-                        The motto of the directors, Anthony and Joe Russo, appears to be: If you can make it happen, do it. Don't hold back.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small>Last updated 3 mins ago</small>
-                        <button class="btn btn-secondary float-right btn-sm">show</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/mr3.jpg">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title mt-3">Tawshif Ahsan Khan</h4>
-                        <div class="meta">
-                            <a>Friends</a>
-                        </div>
-                        <div class="card-text">
-                            
-                        
-                        The fact that a Marvel movie dares to question the big, shiny spectacle that is its bread and butter - and acknowledge that untold thousands die in the name of entertainment - seems rather novel.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small>Last updated 3 mins ago</small>
-                        <button class="btn btn-secondary float-right btn-sm">show</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/pic8.jpg">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title mt-3">Tawshif Ahsan Khan</h4>
-                        <div class="meta">
-                            <a>Friends</a>
-                        </div>
-                        <div class="card-text">
-                            
-                        It is one of the best movies to ever come out of the Marvel Cinematic Universe, balancing engaging action set pieces and witty dialogue with intelligent character studies and ethical debates.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small>Last updated 3 mins ago</small>
-                        <button class="btn btn-secondary float-right btn-sm">show</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card card-inverse card-info">
-                    <img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title mt-3">Tawshif Ahsan Khan</h4>
-                        <div class="meta card-text">
-                            <a>Friends</a>
-                        </div>
-                        <div class="card-text">
-                            Tawshif is a web designer living in Bangladesh.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small>Last updated 3 mins ago</small>
-                        <button class="btn btn-info float-right btn-sm">Follow</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card card-inverse card-info">
-                    <img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
-                    <div class="card-block">
-                        <figure class="profile profile-inline">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title">Tawshif Ahsan Khan</h4>
-                        <div class="card-text">
-                            Tawshif is a web designer living in Bangladesh.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small>Last updated 3 mins ago</small>
-                        <button class="btn btn-info float-right btn-sm">Follow</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card card-inverse card-info">
-                    <img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
-                    <div class="card-block">
-                        <figure class="profile profile-inline">
-                            <img src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title">Tawshif Ahsan Khan</h4>
-                        <div class="card-text">
-                            Tawshif is a web designer living in Bangladesh.
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-info btn-sm">Follow</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-
-
-
-<!-- color line  -->
-    
-<div class="container">
-    <div class="row">
-        <div class="col-md-5ths col-sm-5ths red">
-        </div>
-        <div class="col-md-5ths col-sm-5ths green">
-        </div>
-        <div class="col-md-5ths col-sm-5ths blue">
-        </div>
-        <div class="col-md-5ths col-sm-5ths green">
-        </div>
-        <div class="col-md-5ths col-sm-5ths yellow">
-        </div>
-    </div>
-</div>
 
 
 
@@ -552,6 +384,7 @@
 <?php
 if($_POST){
     $name = $_POST['name'];
+    $score = $_POST['score']
     $content = $_POST['commentContent'];
     $handle = fopen("comment.html","a");
     fwrite($handle,"<b>".$name."</b>:<b/>".$content."<br/>");
@@ -573,10 +406,13 @@ if($_POST){
     <div class="row">
     
     <div class="col-md-6">
+         
                             <div class="widget-area no-padding blank">
                                 <div class="status-upload">
+                                   
                                     <form action="" method="POST">
                                         Name: <input type="text" name="name"><br>
+                                        Score: <input type="text" name="score"><br>
                                         <textarea placeholder="What are you doing right now?" name="commentContent"></textarea>
                                         <ul>
                                             <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio"><i class="fa fa-music"></i></a></li>
@@ -587,6 +423,7 @@ if($_POST){
                                         <button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Post!!</button><br>
                                         
                                     </form>
+                                    
                                     <?php include "comment.html"; ?>
                                 </div><!-- Status Upload  -->
                             </div><!-- Widget Area -->
