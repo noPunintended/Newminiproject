@@ -253,7 +253,7 @@
         <p class="card-text">The aging patriarch of an organized crime dynasty transfers control of his clandestine. </p>
     </div>
     <div class="card-footer">
-        <a href="godfather.html" class="btn btn-primary">Find Out More!</a>
+        <a href="godfather.php" class="btn btn-primary">Find Out More!</a>
     </div>
 </div>
 </div>
@@ -378,16 +378,12 @@
 
 
 <?php
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $score = $_POST['score']
-    $content = $_POST['commentContent'];
-
-
-
-}
-
-
+    $groupcode = $_POST['name'];
+    $groupname = $_POST['score'];
+    $remark = $_POST['commentContent'];
+/*    $name = $_POST['name'];
+    $score = $_POST['score'];
+    $content = $_POST['commentContent'];*/
 
 ?>
     <div class="col-sm-6">
@@ -435,7 +431,7 @@ if(isset($_POST['submit'])){
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
 
-                    <form action="index.php" method="POST">
+                    <form action="godfather.php" method="POST">
                         Name: <input type="text" name="name"><br>
                         Score :  <input type="text" name="score"><br>
                         <textarea placeholder="What are you doing right now?" name="commentContent"></textarea>

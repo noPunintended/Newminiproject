@@ -95,7 +95,7 @@
                         <span class="progress-right">
                             <span class="progress-bar"></span>
                         </span>
-                        <div class="progress-value">90%</div>
+                        <div class="progress-value">95%</div>
 
                     </div>
                 </div>
@@ -109,7 +109,7 @@
 
 
         <h3 class="my-3">Storyline</h3>
-        <p>When the aging head of a famous crime family decides to transfer his position to one of his subalterns, a series of unfortunate events start happening to the family, and a war begins between all the well-known families leading to insolence, deportation, murder and revenge, and ends with the favorable successor being finally chosen. Written by J. S. Golden</p>
+        <p> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;When the aging head of a famous crime family decides to transfer his position to one of his subalterns, a series of unfortunate events start happening to the family, and a war begins between all the well-known families leading to insolence, deportation, murder and revenge, and ends with the favorable successor being finally chosen. Written by J. S. Golden</p>
         <h3 class="my-3">Details</h3>
 
         <h6>Official Sites:
@@ -253,7 +253,7 @@
         <p class="card-text">The aging patriarch of an organized crime dynasty transfers control of his clandestine. </p>
     </div>
     <div class="card-footer">
-        <a href="godfather.html" class="btn btn-primary">Find Out More!</a>
+        <a href="godfather.php" class="btn btn-primary">Find Out More!</a>
     </div>
 </div>
 </div>
@@ -282,14 +282,14 @@
         <div class="col-sm-6">
             <div id="tb-testimonial" class="testimonial testimonial-default-filled">
                 <div class="testimonial-section">
-                    Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.
+                    I think the film was good, but didn't really live up to expectations. I didn't find it that scary. Admittedly, one of the jump scares worked on me but otherwise I never felt any dread looming in the pit of my stomach. The film is gorier than the mini series. That's for sure. And I liked that updated aspect, but nothing particularly shocked me. There was quite a bit of special effects that just were not very good. And I think that's a big reason why I just wasn't very scared.
                 </div>
                 <div class="testimonial-desc">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+                    <img src="images/god/1.jpg" alt="" />
                     <div class="testimonial-writer">
                         <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
+                        <div class="testimonial-writer-designation">Top Critic</div>
+                        <b>Score: </b><a class="testimonial-writer-company">99</a>
                     </div>
                 </div>
             </div>   
@@ -298,14 +298,14 @@
         <div class="col-sm-6">
             <div id="tb-testimonial" class="testimonial testimonial-primary-filled">
                 <div class="testimonial-section">
-                    Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.
+                    I'm writing this not so much as a critic but as an ordinary moviegoer, experiencing Proustian transport via an old-fashioned scary movie executed by a team of filmmakers and actors at the top of their game.
                 </div>
                 <div class="testimonial-desc">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+                    <img src="images/pic9.jpg" alt="" />
                     <div class="testimonial-writer">
-                        <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
+                        <div class="testimonial-writer-name">Matthew Rozsa</div>
+                        <div class="testimonial-writer-designation">Top Critic</div>
+                        <b>Score: </b><a class="testimonial-writer-company">95</a>
                     </div>
                 </div>
             </div>   
@@ -314,14 +314,14 @@
         <div class="col-sm-6">
             <div id="tb-testimonial" class="testimonial testimonial-info-filled">
                 <div class="testimonial-section">
-                    Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.
+                    The movie is not terrifying but blandly edifying; its scares, foreshadowed as if by telegram, are delivered less effectively than its life lessons.
                 </div>
                 <div class="testimonial-desc">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+                    <img src="images/pic7.jpg" alt="" />
                     <div class="testimonial-writer">
-                        <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
+                        <div class="testimonial-writer-name">Richard Brody</div>
+                        <div class="testimonial-writer-designation">Top Critic</div>
+                        <b>Score: </b><a class="testimonial-writer-company">90</a>
                     </div>
                 </div>
             </div>   
@@ -330,14 +330,14 @@
         <div class="col-sm-6">
             <div id="tb-testimonial" class="testimonial testimonial-success-filled">
                 <div class="testimonial-section">
-                    Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.
+                    It's a too-long (130 min.), too-rambling trek to the meta-horror face-off with Franklin D. Roosevelt's idea that 'the only thing we have to fear is fear itself.'
                 </div>
                 <div class="testimonial-desc">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+                    <img src="images/mr3.jpg" alt="" />
                     <div class="testimonial-writer">
-                        <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
+                        <div class="testimonial-writer-name">Brian Gibson</div>
+                        <div class="testimonial-writer-designation">Top Critic</div>
+                        <b>Score: </b><a class="testimonial-writer-company">65</a>
                     </div>
                 </div>
             </div>   
@@ -346,14 +346,14 @@
         <div class="col-sm-6">
             <div id="tb-testimonial" class="testimonial testimonial-warning-filled">
                 <div class="testimonial-section">
-                    Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.
+                    Despite all the marketing focus on the homicidal circus freak, It was never about the clown. It's about how trauma haunts a childhood and how the latent ennui of small-town America can fan the flames of our greatest fears.
                 </div>
                 <div class="testimonial-desc">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+                    <img src="images/mr6.jpg" alt="" />
                     <div class="testimonial-writer">
-                        <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
+                        <div class="testimonial-writer-name">Kevin Fallon</div>
+                        <div class="testimonial-writer-designation">Top Critic</div>
+                        <b>Score: </b><a class="testimonial-writer-company">97</a>
                     </div>
                 </div>
             </div>   
@@ -362,54 +362,54 @@
         <div class="col-sm-6">
             <div id="tb-testimonial" class="testimonial testimonial-danger-filled">
                 <div class="testimonial-section">
-                    Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.
+                    As a critic specializing in scary films, I can honestly say that in the last three years alone there's been several that have impressed me more... I don't get what makes It so special.
                 </div>
                 <div class="testimonial-desc">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
+                    <img src="images/mr1.jpg" alt="" />
                     <div class="testimonial-writer">
-                        <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
+                        <div class="testimonial-writer-name">Steve Newton</div>
+                        <div class="testimonial-writer-designation">Top Critic</div>
+                        <b>Score: </b><a class="testimonial-writer-company">98</a>
                     </div>
                 </div>
             </div>   
         </div>
-
-
-
+ <!-- comment -->    
 <?php
-if(isset($_POST['submit'])){
+
+   
+
+    if(isset($_POST['submitcom'])){
     $name = $_POST['name'];
-    $score = $_POST['score']
+    $score = $_POST['score'];
     $content = $_POST['commentContent'];
-
-
-
-}
-
-
-
 ?>
-    <div class="col-sm-6">
-            <div id="tb-testimonial" class="testimonial testimonial-danger-filled">
+         <div class="col-sm-6">
+            <div id="tb-testimonial" class="testimonial testimonial-primary-filled">
                 <div class="testimonial-section">
                     <?=$content?>
                 </div>
                 <div class="testimonial-desc">
                     <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
                     <div class="testimonial-writer">
-                        <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
+                        <div class="testimonial-writer-name"><?=$name?></div>
+                        <div class="testimonial-writer-designation">Top Critic</div>
+                        <a href="#" class="testimonial-writer-company"><?=$score?></a>
                     </div>
                 </div>
             </div>   
         </div>
-        
+
+<?php    }
+
+?>
+
 
 
     </div>
 </div>
+
+
 
 
 <br>
@@ -435,17 +435,17 @@ if(isset($_POST['submit'])){
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
 
-                    <form action="index.php" method="POST">
-                        Name: <input type="text" name="name"><br>
-                        Score :  <input type="text" name="score"><br>
-                        <textarea placeholder="What are you doing right now?" name="commentContent"></textarea>
+                    <form action="godfather.php" method="POST">
+                        <b>Name:</b> <input  placeholder="Enter your name" type="text" name="name"><br>
+                        <b>Score:</b> <input placeholder="Enter your score" type="text" name="score"><br>
+                        <textarea placeholder="How do you feel or what do you think about this movie?" name="commentContent"></textarea>
                         <ul>
                             <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio"><i class="fa fa-music"></i></a></li>
                             <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
                             <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Sound Record"><i class="fa fa-microphone"></i></a></li>
                             <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
                         </ul>
-                        <button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Post!!</button><br>
+                        <button type="submit" class="btn btn-success green" name="submitcom"><i class="fa fa-share"></i> Post!!</button><br>
                         
                     </form>
                 </div><!-- Status Upload  -->
@@ -460,9 +460,7 @@ if(isset($_POST['submit'])){
 <div id="layer2"></div>
 <div id="layer1"></div> -->
 <br>
-<?php 
-    echo "$name";
- ?>
+
 <!-- Footer -->
 <footer class="py-5 bg-dark">
   <div class="container">

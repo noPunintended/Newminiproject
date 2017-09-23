@@ -253,7 +253,7 @@
         <p class="card-text">The aging patriarch of an organized crime dynasty transfers control of his clandestine. </p>
     </div>
     <div class="card-footer">
-        <a href="godfather.html" class="btn btn-primary">Find Out More!</a>
+        <a href="godfather.php" class="btn btn-primary">Find Out More!</a>
     </div>
 </div>
 </div>
@@ -374,37 +374,6 @@
                 </div>
             </div>   
         </div>
-
-
-
-<?php
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $score = $_POST['score']
-    $content = $_POST['commentContent'];
-
-
-
-}
-
-
-
-?>
-    <div class="col-sm-6">
-            <div id="tb-testimonial" class="testimonial testimonial-danger-filled">
-                <div class="testimonial-section">
-                    <?=$content?>
-                </div>
-                <div class="testimonial-desc">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" alt="" />
-                    <div class="testimonial-writer">
-                        <div class="testimonial-writer-name">Zahed Kamal</div>
-                        <div class="testimonial-writer-designation">Front End Developer</div>
-                        <a href="#" class="testimonial-writer-company">Touch Base Inc</a>
-                    </div>
-                </div>
-            </div>   
-        </div>
         
 
 
@@ -435,7 +404,7 @@ if(isset($_POST['submit'])){
             <div class="widget-area no-padding blank">
                 <div class="status-upload">
 
-                    <form action="index.php" method="POST">
+                    <form action="godfather2.php" method="POST">
                         Name: <input type="text" name="name"><br>
                         Score :  <input type="text" name="score"><br>
                         <textarea placeholder="What are you doing right now?" name="commentContent"></textarea>
