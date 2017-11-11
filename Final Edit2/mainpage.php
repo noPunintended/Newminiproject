@@ -58,7 +58,7 @@
                 <p class="card-text">The latest adaptation of Stephen King's classic horror novel privileges CGI scares over dread and nuance.</p>
               </div>
               <div class="card-footer">
-                <a href="It.html" class="btn btn-primary">Find Out More!</a>
+                <a href="It.php" class="btn btn-primary">Find Out More!</a>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
                 <p class="card-text">An Egyptian god battles his vengeful uncle with the aid of a mortal in Alex Proyas' fantasy-adventure film.</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary">Find Out More!</a>
+                <a href="godofegypts.php" class="btn btn-primary">Find Out More!</a>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@
                 <p class="card-text">The aging patriarch of an organized crime dynasty transfers control of his clandestine. </p>
               </div>
               <div class="card-footer">
-                <a href="godfather.php" class="btn btn-primary">Find Out More!</a>
+                <a href="moviedetail.php?movieid=1" class="btn btn-primary">Find Out More!</a>
               </div>
             </div>
           </div>

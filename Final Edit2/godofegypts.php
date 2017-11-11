@@ -162,7 +162,7 @@
         <p class="card-text">An Egyptian god battles his vengeful uncle with the aid of a mortal in Alex Proyas' fantasy-adventure film.</p>
     </div>
     <div class="card-footer">
-        <a href="" class="btn btn-primary">Find Out More!</a>
+        <a href="godofegypts.php" class="btn btn-primary">Find Out More!</a>
     </div>
 </div>
 </div>
