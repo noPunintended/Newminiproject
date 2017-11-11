@@ -26,15 +26,20 @@
 
 <?php
   require_once('navbar.php');
+  require_once('connect.php');
+
+  if (isset($_POST['Register'])) {
+    $usernamein = $_POST['usernamein'];
+    $passwd = $_POST['passwd'];
+    $name = $_POST['name'];
+    $Utype = $_POST['Utype'];
+    $query = "INSERT INTO user (username, password, name, usertype) VALUES('$usernamein', '$passwd', '$name', '$Utype')";
+    $connect->query($query);
+//    if ($connect->query($query) === TRUE)
+//        echo "success";
+  }
+
 ?>
-
-
-
-
-
-
-
-
 
       <!-- Page Content -->
       <div class="container">
@@ -43,7 +48,7 @@
         <header class="jumbotron my-4">
           <h1 class="display-3">Movies Reviews and Ratings!</h1>
           <p class="lead">Current movie reviews and ratings from critics and user on all of the latest movies. Movie discussions, analysis, and much more details.</p>
-          <a href="#" class="btn btn-primary btn-lg">News!</a>
+          
         </header>
 
         <!-- Page Features -->
