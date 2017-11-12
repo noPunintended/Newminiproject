@@ -43,13 +43,13 @@
                     session_start();
                     if (isset($_POST['logout'])) {
                       # code...
-                      unset($_SESSION['usernamein']);
+                      unset($_SESSION['name']);
                     }
-                    if (isset($_POST['usernamein']))
-                        $_SESSION['usernamein'] = $_POST['usernamein'];
-                    //If user doesn't fill out the form, then it will show 'LOGIN' in the bar
-                    if (!isset($_SESSION['usernamein'])) {
+
+                    if (!isset($_SESSION['name'])) {
+                        
                         ?>
+
                         <a class="nav-link" href="login.php">Login</a>
                         <span class="sr-only">(current)</span>
 
@@ -57,9 +57,9 @@
                     } else {
                         ?>
                         
-                        <a class="nav-link" href="login.php"><?= $_SESSION['usernamein']; ?></a>
+                        <a class="nav-link" href="login.php"><?= $_SESSION['name']; ?></a>
                         <li class="nav-item active">
-                        <form action="ranking.php" method="POST" class="nav-link">
+                        <form action="mainpage.php" method="POST" class="nav-link">
                           <input type="submit" name="logout"  value="Logout">
 
                         </form>

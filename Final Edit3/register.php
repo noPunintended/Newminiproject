@@ -18,7 +18,7 @@
           <h1 class="text-center">Signup Form</h1>
         </div>
          <div class="modal-body">
-             <form method="POST" action="mainpage.php" >
+             <form method="POST" action="login.php" >
                  <input type="text" name="usernamein"  class="form-control input-lg" placeholder="Username"/>
 
                  <input type="text" name="name"  class="form-control input-lg" placeholder="Name"/>
@@ -30,7 +30,7 @@
 
 
 
-                 <input type="password" name="passwd" class="form-control input-lg" placeholder="Password"/>
+                 <input type="password" name="passwd" value="password" class="form-control input-lg" placeholder="Password"  />
 
         <!--         <input type="button" name="logins" onclick="check(this.form)" class="btn btn-block btn-lg btn-primary"  value="Login"/>
                 -->
