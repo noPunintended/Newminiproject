@@ -13,6 +13,7 @@ $count = $result->num_rows;
 if($count >0){
 	session_start();
 	$_SESSION['name'] = $row['name'];
+	$_SESSION['usernamein'] = $row['username'];
 	
 	echo "Login sucessfully!!";
 	echo $row['name'];
