@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GodFather</title>
+    <title>Movie Review</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -188,13 +188,6 @@ require_once('comment.php');
 
 
 
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Movie Reviews 2017</p>
-</div>
-<!-- /.container -->
-</footer>
 
 
 <!-- Bootstrap core JavaScript -->
