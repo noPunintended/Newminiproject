@@ -19,9 +19,9 @@
         </div>
          <div class="modal-body">
              <form method="POST" action="login.php" >
-                 <input type="text" name="usernamein"  class="form-control input-lg" placeholder="Username"/>
+                 <input type="text" name="usernamein" class="form-control input-lg" placeholder="Username" required/>
 
-                 <input type="text" name="name"  class="form-control input-lg" placeholder="Name"/>
+                 <input type="text" name="name"  class="form-control input-lg" placeholder="Name" required/>
                 <select class="form-control input-lg" name="Utype">
                   <option value="User">User</option>
                   <option value="Top Critic">Top Critic</option>
@@ -30,7 +30,7 @@
 
 
 
-                 <input type="password" name="passwd" value="password" class="form-control input-lg" placeholder="Password"  />
+                 <input type="password" name="passwd" class="form-control input-lg" placeholder="Password" required/>
 
         <!--         <input type="button" name="logins" onclick="check(this.form)" class="btn btn-block btn-lg btn-primary"  value="Login"/>
                 -->
