@@ -32,81 +32,14 @@
 
 <body>
 
-<!-- Navigation bar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="mainpage.php">Movie Reviews</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<?php 
+require_once('navbar.php');
+require('connect.php');
 
-      <div class="input-group">
-        <input class="form-control" placeholder="Search" id="movieSearch" data-provide="typeahead"
-        autocomplete="off">
-        <div class="input-group-btn">
-          <button id="searchButton" class="btn btn-default"><!-- <i
-            class=" glyphicon glyphicon-search"></i></button> -->
-            <img src="https://image.ibb.co/dxU5KQ/698956_icon_111_search_128.png" class="img-circle" alt="Cinque Terre" width="20" height="20">
+$q='SELECT * FROM `movies` ORDER BY `movies`.`moviescore` DESC';
+$result=$connect->query($q);
 
-          </div>
-        </div>
-
-
-      
-
-
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="mainpage.php">Home
-
-                <span class="sr-only">(current)</span>
-              </a>
-
-
-            </li>
-              <li class="nav-item active">
-              <a class="nav-link" href="rankings/ranking.html">Rankings
-              </a>
-            </li>
-            <li class="nav-item">
-<?php
-                    session_start();
-                    if (isset($_POST['logout'])) {
-                      # code...
-                      unset($_SESSION['usernamein']);
-                    }
-                    if (isset($_POST['usernamein']))
-                        $_SESSION['usernamein'] = $_POST['usernamein'];
-
-                    if (!isset($_SESSION['usernamein'])) {
-                        ?>
-                        <a class="nav-link" href="login.php">Login</a>
-                        <span class="sr-only">(current)</span>
-
-                        <?php
-                    } else {
-                        ?>
-                        
-                        <a class="nav-link" href="login.php"><?= $_SESSION['usernamein']; ?></a>
-                        <li class="nav-item active">
-                        <form action="mainpage.php" method="POST" class="nav-link">
-                          <input type="submit" name="logout"  value="Logout">
-
-                        </form>
-                      </li>
-                        <?php
-                        
-                    }
 ?>
-
-
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
 
 <!-- Page Content -->
@@ -115,10 +48,29 @@
     <div id="blog" class="row">
 
         <!-- GODFATHER -->
+<?php 
+        while ($row = $result->fetch_array()) {
+            # code...
+        $score = round($row['moviescore']);
+        /*echo $score;*/
+        $scores = ($score/100)*300;
+        /*echo $scores;*/
+        if ($score>=90) {
+            # code...
+            $title ="ดูเถอะไอ่เหี้ย";
+        }
+        elseif ($score>=50&&$score<90) {
+            # code...
+            $title ="พอดูได้อยู่ไอ่สัส";
+        }
+        else{
+            $title ="มึงอย่าดูเลย";
+        }
 
+ ?>
         <div class="col-md-10 blogShort">
             <br>
-            <h1>The Godfather</h1>
+            <h1><?=$row['moviename']?></h1>
             <br>
             <div class="row">
                 <div class="col-md-3">
@@ -126,179 +78,45 @@
                          class="pull-left img-responsive thumb margin10 img-thumbnail">
                 </div>
                 <div class="col-md-3">
-                    <b><p>CRITICS</p></b>
-                    <div class="progress oo">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">90%</div>
+                    <b><p>CRITICS (<?=$row['moviescore']?>)</p></b>
+                    <style type="text/css">
+                    .outter{
+                        height:25px;
+                        width:300px;
+                        border:solid 1px #000;
+
+                    }
+                    .inner{
+                        height:23px;
+                        width:<?php echo $scores  ?>px;
+                        border-right:solid 1px #000;
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
+                    background: rgb(208,228,247); /* Old browsers */
+                    background: -moz-linear-gradient(top, rgba(208,228,247,1) 0%, rgba(115,177,231,1) 24%, rgba(10,119,213,1) 50%, rgba(83,159,225,1) 79%, rgba(135,188,234,1) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+
+                    }
+                    </style>
+                    <div class="outter">
+                        <div class="inner">
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    <b><p>USERS</p></b>
-                    <div class="progress ot">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">95%</div>
-                    </div>
-                </div>
+
             </div>
 
-            <article><p> "Masterpiece" </p></article>
+            <article><p><h5>" <?=$title?> "</h5></p></article>
             <a class="btn btn-blog pull-right marginBottom10" href="godfather.php">READ
                 MORE</a>
         </div>
     </div>
 
-    <!-- IT -->
-    <div class="col-md-10 blogShort">
-        <br>
-        <h1>IT</h1>
-        <br>
-        <div class="row">
-                <div class="col-md-3">
-        <img src="https://image.ibb.co/m5oQW5/It_remake_movie_poster_scale_down_2017.jpg" alt="post img"
-             class="pull-left img-responsive thumb margin10 img-thumbnail">
-        </div>
-
-        <div class="col-md-3">
-                    <b><p>CRITICS</p></b>
-                    <div class="progress to">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">85%</div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <b><p>USERS</p></b>
-                    <div class="progress tt">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">80%</div>
-                    </div>
-                </div>
-
-    </div>
-
-
-
-        <article><p>
-            "Entertaining"
-        </p></article>
-        <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a>
-    </div>
-
-    <!-- Spiderman:Homecoming -->
-    <div class="col-md-10 blogShort">
-        <br>
-        <h1>Spiderman:Homecoming</h1>
-        <br>
-        <div class="row">
-                <div class="col-md-3">
-        <img src="https://image.ibb.co/g8TLyk/spiderman_poster_scale_down.jpg" alt="post img"
-             class="pull-left img-responsive thumb margin10 img-thumbnail">
-             
-                       </div>
-                <div class="col-md-3">
-                    <b><p>CRITICS</p></b>
-                    <div class="progress tro">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">50%</div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <b><p>USERS</p></b>
-                    <div class="progress trt">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">87%</div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        <article><p>
-            "Mediocre"
-        </p></article>
-        <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a>
-    </div>
-
-
-    <!-- God of Egypt -->
-    <div class="col-md-10 blogShort">
-        <br>
-        <h1>God of Egypt</h1>
-        <br>
-        <div class="row">
-                <div class="col-md-3">
-        <img src="https://image.ibb.co/moskW5/God_of_Egypt_poster_scale_down.jpg" alt="post img"
-             class="pull-left img-responsive thumb margin10 img-thumbnail">
-        
-                            </div>
-                <div class="col-md-3">
-                    <b><p>CRITICS</p></b>
-                    <div class="progress fo">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">50%</div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <b><p>USERS</p></b>
-                    <div class="progress ft">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">50%</div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        <article><p>
-            "Terribly"
-        </p></article>
-        <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a>
-    </div>
+<?php 
+}
+ ?>
 
     <!-- I don't know what it is -->
     <div class="col-md-12 gap10"></div>
