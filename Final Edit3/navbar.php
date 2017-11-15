@@ -1,4 +1,4 @@
-<!--Navigation Bar -->
+ <!--Navigation Bar -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -58,7 +58,7 @@
                     } else {
                         ?>
                         
-                        <a class="nav-link" href="login.php"><?= $_SESSION['name']; ?></a>
+                        <a class="nav-link" href="Editprofile.php?id=<?=$_SESSION['usernamein']?>"><?= $_SESSION['usernamein']; ?></a>
                         <li class="nav-item active">
                         <form action="mainpage.php" method="POST" class="nav-link">
                           <input type="submit" name="logout"  value="Logout">
