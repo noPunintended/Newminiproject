@@ -44,6 +44,7 @@
                     if (isset($_POST['logout'])) {
                       # code...
                       unset($_SESSION['name']);
+                      unset($_SESSION['usernamein']);
                     }
 
                     if (!isset($_SESSION['name'])) {

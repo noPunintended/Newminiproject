@@ -36,7 +36,7 @@
 require_once('navbar.php');
 require('connect.php');
 
-$q='SELECT * FROM `movies` ORDER BY `movies`.`moviescore` DESC';
+$q='SELECT * FROM `movies` ORDER BY `movies`.`c_moviescore` DESC';
 $result=$connect->query($q);
 
 ?>
@@ -49,17 +49,22 @@ $result=$connect->query($q);
 
         <!-- GODFATHER -->
 <?php 
+$i=1;
+$j=$i+10;
         while ($row = $result->fetch_array()) {
             # code...
-        $score = round($row['moviescore']);
+        
+        $c_score = round($row['c_moviescore']);
         /*echo $score;*/
-        $scores = ($score/100)*300;
+        $c_scores = ($c_score/10)*200;
         /*echo $scores;*/
-        if ($score>=90) {
+        $u_score = round($row['u_moviescore']);
+        $u_scores = ($u_score/10)*200;
+        if ($c_score>=9) {
             # code...
             $title ="ดูเถอะไอ่เหี้ย";
         }
-        elseif ($score>=50&&$score<90) {
+        elseif ($c_score>=5&&$c_score<9) {
             # code...
             $title ="พอดูได้อยู่ไอ่สัส";
         }
@@ -74,21 +79,22 @@ $result=$connect->query($q);
             <br>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="https://image.ibb.co/hyPAyk/The_Godfather_Poster_scale_down.jpg" alt="post img"
+                    <img src="<?=$row['moviepic']?>" alt="post img"
                          class="pull-left img-responsive thumb margin10 img-thumbnail">
                 </div>
                 <div class="col-md-3">
-                    <b><p>CRITICS (<?=$row['moviescore']?>)</p></b>
+                    <b><p>CRITICS (<?=$row['c_moviescore']?>)</p></b>
+                    
                     <style type="text/css">
-                    .outter{
+                    .outter<?php echo $i ?>{
                         height:25px;
-                        width:300px;
+                        width:200px;
                         border:solid 1px #000;
 
                     }
-                    .inner{
+                    .inner<?php echo $i ?>{
                         height:23px;
-                        width:<?php echo $scores  ?>px;
+                        width:<?php echo $c_scores ?>px;
                         border-right:solid 1px #000;
                     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
                     background: rgb(208,228,247); /* Old browsers */
@@ -96,11 +102,37 @@ $result=$connect->query($q);
                     background: -webkit-linear-gradient(top, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
                     background: linear-gradient(to bottom, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
-
                     }
                     </style>
-                    <div class="outter">
-                        <div class="inner">
+                    <div class="outter<?php echo $i ?>">
+                        <div class="inner<?php echo $i ?>">
+                        </div>
+                    </div>
+                </div>
+                <!-- USER SCORE BAR -->
+                <div class="col-md-3">
+                    <b><p>USER (<?=$row['u_moviescore']?>)</p></b>
+                    
+                    <style type="text/css">
+                    .outter<?php echo $j ?>{
+                        height:25px;
+                        width:200px;
+                        border:solid 1px #000;
+
+                    }
+                    .inner<?php echo $j ?>{
+                        height:23px;
+                        width:<?php echo $u_scores ?>px;
+                        border-right:solid 1px #000;
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd65e+0,febf04+100;Yellow+3D+%232 */
+background: rgb(255,214,94); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,214,94,1) 0%, rgba(254,191,4,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+                    </style>
+                    <div class="outter<?php echo $j ?>">
+                        <div class="inner<?php echo $j ?>">
                         </div>
                     </div>
                 </div>
@@ -115,6 +147,9 @@ $result=$connect->query($q);
     </div>
 
 <?php 
+$i++;
+$j++;
+
 }
  ?>
 
