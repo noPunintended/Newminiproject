@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2017 at 05:42 AM
+-- Generation Time: Nov 15, 2017 at 07:01 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -36,14 +36,6 @@ CREATE TABLE `comment` (
   `commentscore` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `comment`
---
-
-INSERT INTO `comment` (`commentid`, `commenttext`, `commentofusername`, `movieid`, `commentscore`) VALUES
-(1, 'wqewqe', 1, 1, 3),
-(5, 'Test score update', 1, 1, 6);
-
 -- --------------------------------------------------------
 
 --
@@ -64,8 +56,8 @@ CREATE TABLE `movies` (
 --
 
 INSERT INTO `movies` (`movieid`, `moviename`, `moviedetail`, `c_moviescore`, `u_moviescore`, `moviepic`) VALUES
-(1, 'Godfather(1972)', '        <p> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;When the aging head of a famous crime family decides to transfer his position to one of his subalterns, a series of unfortunate events start happening to the family, and a war begins between all the well-known families leading to insolence, deportation, murder and revenge, and ends with the favorable successor being finally chosen. Written by J. S. Golden</p>\r\n        <h3 class=\"my-3\">Details</h3>\r\n\r\n        <!-- Add link from IMDb -->\r\n\r\n        <h6>Official Sites:\r\n            <a href=\"http://www.paramount.com/movies/godfather-trilogy\" rel=\"nofollow\" itemprop=\"ur1\">GodFather Oficial Site</a>\r\n            \r\n        </h6>\r\n\r\n\r\n        <h6>Release Date:\r\n            <a >6 May 1972 (USA)</a>      \r\n        </h6>', 4, 7, 'images/god1.jpg'),
-(2, 'IT', 'ss', 4, 7, 'images/it.jpg');
+(1, 'Godfather(1972)', '        <p> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;When the aging head of a famous crime family decides to transfer his position to one of his subalterns, a series of unfortunate events start happening to the family, and a war begins between all the well-known families leading to insolence, deportation, murder and revenge, and ends with the favorable successor being finally chosen. Written by J. S. Golden</p>\r\n        <h3 class=\"my-3\">Details</h3>\r\n\r\n        <!-- Add link from IMDb -->\r\n\r\n        <h6>Official Sites:\r\n            <a href=\"http://www.paramount.com/movies/godfather-trilogy\" rel=\"nofollow\" itemprop=\"ur1\">GodFather Oficial Site</a>\r\n            \r\n        </h6>\r\n\r\n\r\n        <h6>Release Date:\r\n            <a >6 May 1972 (USA)</a>      \r\n        </h6>', 8, 9, 'images/god1.jpg'),
+(2, 'IT', 'ss', 3, 4, 'images/it.jpg');
 
 -- --------------------------------------------------------
 
@@ -88,7 +80,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `password`, `name`, `userpicture`, `usertype`) VALUES
 (1, 'ponbung1234', '123', 'thanpon', NULL, 'Top Critic'),
-(5, '1', '1', 'pon', NULL, 'User');
+(2, 'test1', '123', 'pon', NULL, 'User');
 
 -- --------------------------------------------------------
 
@@ -139,7 +131,7 @@ ALTER TABLE `userinfo`
 -- AUTO_INCREMENT for table `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `commentid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `commentid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT for table `movies`
 --
