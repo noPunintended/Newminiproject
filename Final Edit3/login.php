@@ -39,7 +39,17 @@ document.getElementById("demo").innerHTML = myFunction();
 <?php
     }
     else{
-        $query = "INSERT INTO user (username, password, name, usertype) VALUES('$usernamein', '$passwd', '$name', '$Utype')";
+        if($Utype=="User"){
+        $picture = "images/Superman-dcuo.jpg";
+        
+
+       }
+       else{
+        $picture = "images/images.jpg";
+        echo $picture;
+        }
+        $query = "INSERT INTO user (username, password, name, userpicture, usertype) VALUES('$usernamein', '$passwd', '$name', '$picture', '$Utype')";
+       
         $connect->query($query);
     }
 

@@ -60,16 +60,16 @@ $j=$i+10;
         /*echo $scores;*/
         $u_score = round($row['u_moviescore']);
         $u_scores = ($u_score/10)*200;
-        if ($c_score>=9) {
+        if ($c_score>=8) {
             # code...
-            $title ="ดูเถอะไอ่เหี้ย";
+            $title ="Great movie!";
         }
-        elseif ($c_score>=5&&$c_score<9) {
+        elseif ($c_score>=5&&$c_score<8) {
             # code...
-            $title ="พอดูได้อยู่ไอ่สัส";
+            $title ="Moderate!";
         }
         else{
-            $title ="มึงอย่าดูเลย";
+            $title ="Terribly!";
         }
 
  ?>

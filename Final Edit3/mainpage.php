@@ -28,16 +28,6 @@
   require_once('navbar.php');
   require_once('connect.php');
 
-  if (isset($_POST['Register'])) {
-    $usernamein = $_POST['usernamein'];
-    $passwd = $_POST['passwd'];
-    $name = $_POST['name'];
-    $Utype = $_POST['Utype'];
-    $query = "INSERT INTO user (username, password, name, usertype) VALUES('$usernamein', '$passwd', '$name', '$Utype')";
-    $connect->query($query);
-//    if ($connect->query($query) === TRUE)
-//        echo "success";
-  }
 
 ?>
 
