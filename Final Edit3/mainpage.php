@@ -50,10 +50,10 @@
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="card">
               <!-- Poster It Stephen King-->
-              <img class="card-img-top" src="<?=$row['moviepic']?>" width="150" height="209">
+              <img class="card-img-top" src="<?=$row['Movie_spic']?>">
               <div class="card-body">
                 <h4 class="card-title"><?=$row['moviename']?></h4>
-                <p class="card-text"><?=$row['moviedetail']?></p>
+                <p class="card-text"><?=$row['Movie-intro']?></p>
               </div>
               <div class="card-footer">
                 <a href="moviedetail.php?movieid=<?=$row['movieid']?>" class="btn btn-primary">Find Out More!</a>
