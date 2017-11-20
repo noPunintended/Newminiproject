@@ -145,7 +145,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', end
             </div>
 
             <article><p><h5>" <?=$title?> "</h5></p></article>
-            <a class="btn btn-blog pull-right marginBottom10" href="godfather.php">READ
+            <a class="btn btn-blog pull-right marginBottom10" href="moviedetail.php?movieid=<?=$row['movieid']?>">READ
                 MORE</a>
         </div>
     </div>
