@@ -47,7 +47,8 @@ $result=$connect->query($q);
 <div class="container">
     <br>
     <br>
-    <img src="images/logo.png" width="80" height="80"><font size="6"> &nbsp;Movies Racking</font>
+    <img src="images/logo.png" width="80" height="80"><font size="6"> &nbsp;Movies Ranking</font>
+</div>
     
     <div id="blog" class="row">
 
