@@ -49,11 +49,13 @@ else
         <?php  
         /*$name = $_SESSION["usernamein"];*/
         /*$q = "SELECT * from comment WHERE movieid = '$movieid'";*/
-        $q = "SELECT comment.commentid,user.id,comment.commentofusername,user.usertype,user.name,comment.commenttext,comment.commentscore from user,comment WHERE user.id = comment.commentofusername AND movieid = '$movieid'";
+        $q = "SELECT user.userpicture,comment.commentid,user.id,comment.commentofusername,user.usertype,user.name,comment.commenttext,comment.commentscore,user.username from user,comment WHERE user.id = comment.commentofusername AND movieid = '$movieid'";
         /*$result1 = $connect->query($q);*/
         $result = $connect->query($q);
-        
+        $count=0;
         while ($row = $result->fetch_array()) {
+
+
             ?>
 
             <div class="col-sm-6">
@@ -64,20 +66,29 @@ else
                     </div>
 
                     <div class="testimonial-desc">
-                        <img src="images/god/1.jpg" alt="" />
+                        <img src="<?=$row['userpicture']?>" alt="" />
                         <div class="testimonial-writer">
                             <div class="testimonial-writer-name"><?php echo $row['name']; ?></a></div>
                             <div class="testimonial-writer-designation"><?php echo $row['usertype']; ?></div>
                             <b>Score: </b><a class="testimonial-writer-company"><?php echo $row['commentscore']; ?> </a>
                             
                             <?php 
-                            if ($row['name']==$_SESSION["name"]) {
-                                # code... ?>
+                            if(!isset($_SESSION["usernamein"])){
+                                $_SESSION["usernamein"]='nulls';
+                            }
+                            if ($row['username']==$_SESSION["usernamein"]) {
+                                # code... 
+                                $count=1;
+                                ?>
                                 <br>
                                 <?php
                                     echo '<a href="delcom.php?delid='.$row["commentid"].'&fid='.$movieid.'">';
                                 ?>
-                                Delete<a> this comment.
+                                Delete<a> your comment.
+                                <?php
+                                    echo '<a href="editcomment.php?cid='.$row["commentid"].'&mid='.$movieid.'">';
+                                ?>
+                                &nbsp;Edit<a> your comment.
                             <?php
                             }
                              ?>
@@ -105,12 +116,12 @@ else
 <br>
 <?php  
 // <!-- Boostrap comment box -->
-if (!isset($_SESSION["usernamein"]))
+if (!isset($_SESSION["name"]))
 {
-    echo "<h1>Please login to comment<h1>";
+    echo "<h1>Please login to comment<h1><br>";
 }
-else
-{
+
+elseif ($count==0) {
 
     ?>
     <!-- comment box -->
