@@ -16,6 +16,8 @@
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
     <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/stylecheet.css" rel="stylesheet">
+
 
 </head>
 
@@ -39,6 +41,10 @@
 ?>
 
 
+
+
+
+
 <!-- Page Content -->
 <div class="container">
 
@@ -49,6 +55,7 @@
 </h1>
 
 <!-- Portfolio Item Row -->
+
 <div class="row">
 
 
@@ -60,13 +67,47 @@
   <div class="col-md-4">
 
     <!-- Score Bar -->
-  
-        <h1>Score!!
-        <h2>Top Critic: [<?=$row['c_moviescore']?>]
+  		
+        <h2>Top Critic:<?=$row['c_moviescore']?>
         <br>
-        <h2>User: [<?=$row['u_moviescore']?>]
+        <h2>User: <?=$row['u_moviescore']?>
+        <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+            p{
+                color: red;
+                font-size: 35px:
+                font-weight:5px;
+                font-family: "Noto Sans", sans-serif;
+            }
+        </style>
+        <br>
+        <br>
+        <p id="rank"></p>
+        <br>
+        <script type="text/javascript">
+        //Determine the rank based on critical score
+        var cScore = <?=$row['c_moviescore']?>;
+        var rate="";
+
+        if(cScore == 10){
+            rate = "Masterpiece";}
+        else if(cScore>= 9){
+            rate = "Amazing";}
+        else if(cScore>= 8){
+            rate = "Great";}
+        else if(cScore>= 6.5){
+            rate = "Good";}
+        else if(cScore>= 4){
+            rate = "Mediocre";}
+        else if(cScore>= 3){
+            rate = "Poor";}
+        else{
+            rate = "Dogshit";}
 
 
+        document.getElementById("rank").innerHTML = rate;
+        </script>
+       
         <h3 class="my-3">Storyline</h3>
         <?php echo $row['moviedetail']; ?>
 
