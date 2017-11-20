@@ -36,7 +36,7 @@
 require_once('navbar.php');
 require('connect.php');
 
-$q='SELECT * FROM `movies` ORDER BY `movies`.`c_moviescore` DESC';
+$q='SELECT * FROM `movies` ORDER BY `movies`.`u_moviescore` DESC';
 $result=$connect->query($q);
 
 // COUNT number of voter shown in line 92
@@ -48,10 +48,10 @@ $result=$connect->query($q);
     <br>
     <img src="images/logo.png" width="80" height="80"><font size="6"> &nbsp;Movies Ranking</font>
     </div>
-    <h5><a href="rankingbyuser.php"> Order by Users </a> | Ordered by Critics </h5>
+    <h5><a href="ranking.php"> Ordered by Critics </a> | Ordered by Users</h5>
     <div id="blog" class="row">
 
-   
+        <!-- GODFATHER -->
 <?php 
 $i=1;
 $j=$i+10;
@@ -64,13 +64,13 @@ $j=$i+10;
         $result2=$connect->query($r);
         $row2 = $result2->fetch_array();
         
-        $c_score = round($row['c_moviescore']);
-        $c_scores = ($c_score/10)*200;
-        if ($c_score>=8) {
+        $u_score = round($row['u_moviescore']);
+        $u_scores = ($u_score/10)*200;
+        if ($u_score>=8) {
             # code...
             $title ="Great movie!";
         }
-        elseif ($c_score>=5&&$c_score<8) {
+        elseif ($u_score>=5&&$u_score<8) {
             # code...
             $title ="Moderate!";
         }
@@ -90,10 +90,10 @@ $j=$i+10;
                          class="pull-left img-responsive thumb margin10 img-thumbnail">
                 </div>
                 <div class="col-md-3">
-                    <b><p>CRITICS (scores: <?=$row['c_moviescore']?> )</p></b>
+                    <b><p>USER (scores: <?=$row['u_moviescore']?>)</p></b>
 
                  <!--    NUMBER OF VOTER -->
-                    <b><p>From <?=$row2['count']?> critics </p></b>
+                    <b><p>From <?=$row2['count']?> users </p></b>
                     
                     <style type="text/css">
                     .outter<?php echo $i ?>{
@@ -104,7 +104,7 @@ $j=$i+10;
                     }
                     .inner<?php echo $i ?>{
                         height:23px;
-                        width:<?php echo $c_scores ?>px;
+                        width:<?php echo $u_scores ?>px;
                         border-right:solid 1px #000;
                     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
                     background: rgb(208,228,247); /* Old browsers */
