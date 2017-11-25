@@ -64,7 +64,7 @@ $j=$i+10;
         $result2=$connect->query($r);
         $row2 = $result2->fetch_array();
         
-        $c_score = round($row['c_moviescore']);
+       /* $c_score = round($row['c_moviescore']);
         $c_scores = ($c_score/10)*200;
         if ($c_score>=8) {
             # code...
@@ -76,7 +76,7 @@ $j=$i+10;
         }
         else{
             $title ="Terribly!";
-        }
+        }*/
 
 
  ?>
@@ -124,7 +124,31 @@ $j=$i+10;
 
             </div>
 
-            <article><p><h5>" <?=$title?> "</h5></p></article>
+            <!-- <article><p><h5>" <?=$title?> "</h5></p></article> -->
+            <p id="rank"></p>
+             <script type="text/javascript">
+        //Determine the rank based on critical score
+        var cScore = <?=$row['c_moviescore']?>;
+        var rate="";
+
+        if(cScore == 10){
+            rate = "Masterpiece";}
+        else if(cScore>= 9){
+            rate = "Amazing";}
+        else if(cScore>= 8){
+            rate = "Great";}
+        else if(cScore>= 6.5){
+            rate = "Good";}
+        else if(cScore>= 4){
+            rate = "Mediocre";}
+        else if(cScore>= 3){
+            rate = "Poor";}
+        else{
+            rate = "Dogshit";}
+
+
+        document.getElementById("rank").innerHTML = rate;
+        </script>
             <a class="btn btn-blog pull-right marginBottom10" href="moviedetail.php?movieid=<?=$row['movieid']?>">READ
                 MORE</a>
         </div>
