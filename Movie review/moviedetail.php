@@ -49,6 +49,14 @@
     else{
         $title ="Terribly!";
     }
+    $t = "SELECT    c_moviescore,FIND_IN_SET(c_moviescore, (
+    SELECT GROUP_CONCAT( c_moviescore
+    ORDER BY c_moviescore DESC ) 
+    FROM movies )
+    ) AS rank
+    FROM movies WHERE movieid = '$movieid'";
+     $resultc = $connect->query($t);
+     $rowc = mysqli_fetch_array($resultc);
     ?>
 
 
@@ -82,6 +90,8 @@
         <h2>Top Critic:<?=$row['c_moviescore']?>
         <br>
         <h2>User: <?=$row['u_moviescore']?>
+        <br>
+        <h2>Rank: <?=$rowc['rank']?>
 <!--         <style type="text/css">
         @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
             p{

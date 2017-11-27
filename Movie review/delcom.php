@@ -6,6 +6,7 @@ require('connect.php');
 $q = "DELETE FROM comment WHERE commentid ='$did'";
 $result = $connect->query($q);
 
+
 if(!$result){
 	echo "Delete not success";
 }

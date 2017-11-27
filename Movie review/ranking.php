@@ -79,6 +79,8 @@ $j=$i+10;
         }
 
 
+
+
  ?>
         <div class="col-md-10 blogShort">
             <br>

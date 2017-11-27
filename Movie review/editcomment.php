@@ -26,7 +26,7 @@ $row = $connect->query($q)->fetch_array();
         <!-- left column -->
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="text-center">
-                <img src="images/editcomment.2.jpg" class="avatar img-circle img-thumbnail" alt="avatar">
+                <img src="images/logo.png" class="avatar img-circle img-thumbnail" alt="avatar">
                 <!--<h6>Upload a different photo...</h6>
                 <input type="file" class="text-center center-block well well-sm">-->
             </div>
